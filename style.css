@@ -2,71 +2,63 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(65, 64, 64);
-    
+    min-height: 120vh;
+    color: aliceblue;  
 }
 
 /* HEADER */
 header{
-    font-size: 20px;
+    height: 60px;
+    min-height: 10vh;
+    font-size: 10px;
     background-color: black;
-    width: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-h1, h2 ul, a {
-    text-decoration: none; 
+a, li {
+    text-decoration: none;
     list-style-type: none;
-}
-h1, h2{
-    color: whitesmoke;
+    color: aliceblue;
 }
 
-h1{
-    font-size: 60px;
-    letter-spacing: 3px;
-}
-
-header ul {
+nav ul {
     display: flex;
     justify-content: space-around;
-    gap: 150px;
-}
+    gap: 50px;
+} 
 
-header a {
-    color: whitesmoke;
-    text-decoration: none;
-}
 
 /* MAIN */
+/* main {
+    min-height: 230vh;
+} */
+
+
 #hero{
+    min-height: 100vh;
     background-image: url(https://cdn-p.smehost.net/sites/28d35d54a3c64e2b851790a18a1c4c18/wp-content/uploads/2015/12/one_0.jpeg);
-    height: 780px;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+   
+   
 }
 
 main article{
-    height: 700px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 30px;
 }
 
-section figure {
+/* section figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,25 +74,29 @@ figcaption button{
     border-color: whitesmoke;
     color: black;
     text-transform: uppercase;
-    padding: 10px 40px 10px 40px;
 }
 
 #texto{
     width: auto;
     padding-bottom: 0px;
-}
+} */
 
 
 /* FOOTER */
 footer{
-    background-color: rgb(34, 34, 34);
+    position: sticky;
+    min-height: 10vh;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    padding: 5px;
 }
 
-footer div{
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 10px;
+.links > a > img {
+    width: 20px;
 }
+
